@@ -1,12 +1,10 @@
-let sinal = 'verde';
-switch(sinal){
-  case 'verde':
-    document.write('liberado');
-    break;
-  case 'amarelo':
-    document.write('vai fechar, pára logo que é melhor');
-    break;
-  case 'vermelho':
-    document.write('fechou, se lascou');
-    break;
-}
+const pessoa = {nome: 'Marcelle', idade: 33};
+document.write(pessoa.nome + '<br>');
+document.write(pessoa.idade + '<br>');
+const quadrado = {
+  base: 10,
+  altura: 20,
+  calcularArea: function(){return this.base*this.altura}
+};
+
+document.write(quadrado.calcularArea());
